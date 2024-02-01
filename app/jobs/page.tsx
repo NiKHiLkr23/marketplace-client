@@ -10,6 +10,8 @@ import {
 import { PublicKey } from "@solana/web3.js";
 import React, { useCallback, useEffect } from "react";
 import CreateJob from "./create-job";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 const marketplaceProgramId = new PublicKey(
   "Hnf7nuJLhXP5pMh7AQrqratPUWcAXzsw6MUf6vacY23V"
 );
@@ -45,8 +47,24 @@ function JobPage() {
     //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div>
+    <div className="flex flex-col gap-5 p-8">
       <CreateJob />
+
+      <div className="container">
+        <div className="border border-gray-200 shadow-md max-w-xs rounded-md">
+          <Image
+            src="/designer.jpg"
+            width={500}
+            height={500}
+            alt=""
+            className="rounded-md"
+          />
+          <div className="p-2">
+            <p className="text-2xl py-2 ">UI/UX Designer</p>
+            <Button className="w-full">Apply</Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
