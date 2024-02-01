@@ -1,0 +1,29 @@
+{
+  "id": "mig_cmtnc3ens9273nf91f10",
+  "parentID": "mig_cmtn5q47qna3f9hdu9r0",
+  "checksum": "1:78c41f90b49873559ebe24e0147ed5d3d0b73f36fca8246d022c7ba02bb11551",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "User"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "imageUrl",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "User"
+      }
+    }
+  ]
+}

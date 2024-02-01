@@ -1,0 +1,69 @@
+{
+    "tables": [
+        {
+            "name": "User",
+            "columns": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "notNull": true,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "email",
+                    "type": "string",
+                    "notNull": true,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "string",
+                    "notNull": true,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "role",
+                    "type": "string",
+                    "notNull": true,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "address",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "Product",
+            "columns": [
+                {
+                    "name": "title",
+                    "type": "string",
+                    "notNull": true,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "description",
+                    "type": "string",
+                    "notNull": true,
+                    "defaultValue": ""
+                },
+                {
+                    "name": "imageUrl",
+                    "type": "string"
+                },
+                {
+                    "name": "amount",
+                    "type": "int"
+                },
+                {
+                    "name": "owner",
+                    "type": "link",
+                    "link": {
+                        "table": "User"
+                    }
+                }
+            ]
+        }
+    ]
+}

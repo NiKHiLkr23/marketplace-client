@@ -1,0 +1,101 @@
+{
+  "id": "mig_cmtn5q47qna3f9hdu9r0",
+  "parentID": "mig_cfmcaqtbcgl08ihudad0",
+  "checksum": "1:04195834c2c27faff80b21c5e185606808c0300c661d880dc28f01901f208718",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "Product",
+        "oldName": "products"
+      }
+    },
+    {
+      "addTable": {
+        "table": "User"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "title",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "Product"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "description",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "Product"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "imageUrl",
+          "type": "string"
+        },
+        "table": "Product"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "amount",
+          "type": "int"
+        },
+        "table": "Product"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "owner",
+          "type": "link",
+          "link": {
+            "table": "User"
+          }
+        },
+        "table": "Product"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "User"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "role",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": ""
+        },
+        "table": "User"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "address",
+          "type": "string"
+        },
+        "table": "User"
+      }
+    }
+  ]
+}

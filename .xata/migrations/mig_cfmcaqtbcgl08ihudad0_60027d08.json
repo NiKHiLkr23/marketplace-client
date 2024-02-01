@@ -1,0 +1,12 @@
+{
+  "id": "mig_cfmcaqtbcgl08ihudad0",
+  "parentID": "mig_cfmcaks23pcv7m8le8ag",
+  "checksum": "1:60027d08e3c94ef7fde66b3293976ce1c985da5405f2ccc7d9ffd5399c8c3cfc",
+  "operations": [
+    {
+      "addTable": {
+        "table": "products"
+      }
+    }
+  ]
+}
